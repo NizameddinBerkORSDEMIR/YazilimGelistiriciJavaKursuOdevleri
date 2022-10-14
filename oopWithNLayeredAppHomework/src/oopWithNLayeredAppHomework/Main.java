@@ -43,7 +43,7 @@ public class Main {
 		}
 		//----------------------------------------------------------------------
 		
-		Course course1 = new Course("JAVASCRIPT","Programlama",4);
+		Course course1 = new Course("JAVASCRIPT","Programlama",4,-17);
 		CourseDao courseDao = new JdbcCourseDao();
 		
 		CourseManager courseManager = new CourseManager(courseDao, loggers);

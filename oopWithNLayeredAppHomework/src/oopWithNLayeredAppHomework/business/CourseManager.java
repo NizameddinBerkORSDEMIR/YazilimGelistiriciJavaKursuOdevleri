@@ -26,6 +26,10 @@ public class CourseManager {
 				throw new Exception("HATA!!! Bu isimde bir kurs zaten mevcuttur.:  "+ c.getCourseName());
 			}
 			
+			if(course.getCoursePrice()<0){
+				throw new Exception("HATA!!! Kursun fiyatı 0'dan küçük olamaz.");
+			}
+			
 		}
 		
 		courseDao.add(course);

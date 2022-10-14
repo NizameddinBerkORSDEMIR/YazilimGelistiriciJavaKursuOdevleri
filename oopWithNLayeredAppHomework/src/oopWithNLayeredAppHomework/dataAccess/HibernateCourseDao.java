@@ -14,9 +14,9 @@ public class HibernateCourseDao implements CourseDao {
 	@Override
 	public ArrayList<Course> getAllCourses(){
 		ArrayList<Course> courses = new ArrayList<>();
-		courses.add(new Course("JAVA","Programlama",1));
-		courses.add(new Course("Python","Programlama",2));
-		courses.add(new Course("C#","Programlama",3));
+		courses.add(new Course("JAVA","Programlama",1,12));
+		courses.add(new Course("Python","Programlama",2,16));
+		courses.add(new Course("C#","Programlama",3,18));
 		
 		return courses;
 	}
